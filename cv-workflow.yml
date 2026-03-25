@@ -1,0 +1,37 @@
+name: Compile CV and Deploy to Website
+
+on:
+  push:
+    branches: [main, master]
+
+jobs:
+  compile-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout CV repo
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          latexmk_shell_escape: true
+          args: "-pdf -file-line-error -halt-on-error -interaction=nonstopmode"
+
+      - name: Prepare PDF for deployment
+        run: |
+          mkdir -p /tmp/cv-output
+          cp main.pdf /tmp/cv-output/main.pdf
+
+      - name: Push PDF to website
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.WEBSITE_REPO_TOKEN }}
+        with:
+          source-directory: /tmp/cv-output
+          destination-github-username: charlottesaucet
+          destination-repository-name: charlottesaucet.github.io
+          target-directory: assets/cv
+          target-branch: main
+          commit-message: "Update CV from Overleaf [automated]"

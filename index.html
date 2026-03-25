@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charlotte Saucet — Economist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home">Charlotte Saucet</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <div class="home-inner">
+      <div class="home-photo-wrap fade-in">
+        <img src="assets/img/photo.jpg" alt="Charlotte Saucet" class="home-photo" />
+      </div>
+      <div class="home-text fade-in delay-1">
+        <h1>Charlotte <span class="accent">Saucet</span></h1>
+        <p class="home-title">Associate Professor of Economics</p>
+        <p class="home-institution">
+          <a href="https://centredeconomiesorbonne.cnrs.fr/" target="_blank" rel="noopener">Centre d'Économie de la Sorbonne</a>
+          &nbsp;·&nbsp; Université Paris&nbsp;1 Panthéon-Sorbonne
+        </p>
+        <p class="home-bio">
+          I am an economist working at the intersection of behavioral and experimental economics.
+          My research focuses on how individuals form and update beliefs — with a particular interest
+          in motivated reasoning, memory biases, and strategic communication.
+        </p>
+        <div class="home-links">
+          <a href="mailto:charlotte.saucet@univ-paris1.fr" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+            Email
+          </a>
+          <a href="https://orcid.org/0000-0003-1337-2594" target="_blank" rel="noopener" class="btn btn-outline">ORCID</a>
+          <a href="https://cv.archives-ouvertes.fr/charlotte-saucet" target="_blank" rel="noopener" class="btn btn-outline">idHAL</a>
+          <a href="#cv" class="btn btn-outline">CV</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Research</h2>
+
+      <div class="research-interests fade-in delay-1">
+        <h3>Research Interests</h3>
+        <div class="tags">
+          <span class="tag">Behavioral Economics</span>
+          <span class="tag">Experimental Economics</span>
+          <span class="tag">Beliefs Formation</span>
+          <span class="tag">Motivated Reasoning</span>
+          <span class="tag">Memory</span>
+          <span class="tag">Strategic Communication</span>
+        </div>
+      </div>
+
+      <!-- FILTER -->
+      <div class="pub-filter fade-in delay-1">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="published">Published</button>
+        <button class="filter-btn" data-filter="progress">Work in Progress</button>
+      </div>
+
+      <!-- PUBLISHED PAPERS -->
+      <div class="pub-group" id="published">
+        <h3 class="pub-group-title fade-in">Published &amp; Forthcoming</h3>
+
+        <article class="pub-card fade-in" data-type="published">
+          <div class="pub-meta">
+            <span class="pub-journal">Experimental Economics</span>
+            <span class="pub-year">2025</span>
+          </div>
+          <h4 class="pub-title">Is motivated memory (just) a matter of mood?</h4>
+          <p class="pub-authors">with A. Prati</p>
+          <p class="pub-abstract">
+            Tests whether overconfidence driven by biased memory is explained by self-enhancement or mood-congruency effects.
+            Results support the self-enhancement hypothesis: individuals better recall positive than negative feedback even when in a negative mood.
+          </p>
+          <div class="pub-links">
+            <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_d989c843c52c4334b403e257ac09d482.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+          </div>
+        </article>
+
+        <article class="pub-card fade-in" data-type="published">
+          <div class="pub-meta">
+            <span class="pub-journal">Review of Economic Studies</span>
+            <span class="pub-year">2025</span>
+          </div>
+          <h4 class="pub-title">Motivated Skepticism</h4>
+          <p class="pub-authors">with J. Hagenbach</p>
+          <p class="pub-abstract">
+            Experimental study of how individuals read strategically-transmitted information when they have preferences over what they will learn.
+            Finds that skepticism is lower when it is self-threatening — a new channel for belief protection in communication.
+          </p>
+          <div class="pub-links">
+            <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_27e20c0b3cb44bd39cae15a809466791.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+            <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_7fda74bc8cfb42e9be249fb11c509f01.pdf" target="_blank" rel="noopener" class="pub-link">Appendix</a>
+          </div>
+        </article>
+
+        <article class="pub-card fade-in" data-type="published">
+          <div class="pub-meta">
+            <span class="pub-journal">Journal of Health Economics</span>
+            <span class="pub-year">2024</span>
+          </div>
+          <h4 class="pub-title">The causal effect of a health treatment on beliefs, stated preferences and memories</h4>
+          <p class="pub-authors">with A. Prati</p>
+          <p class="pub-abstract">
+            Exploits a natural experiment from the UK COVID-19 vaccination campaign. After vaccination, individuals update beliefs
+            overly optimistically about their vaccine's safety and effectiveness, and show distorted memories of prior beliefs.
+          </p>
+          <div class="pub-links">
+            <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_9bc6bfad4cc84d8683962a46876354f6.pdf" target="_blank" rel="noopener" class="pub-link">Appendix</a>
+          </div>
+        </article>
+
+        <article class="pub-card fade-in" data-type="published">
+          <div class="pub-meta">
+            <span class="pub-journal">PNAS</span>
+            <span class="pub-year">2020</span>
+          </div>
+          <h4 class="pub-title">Unethical Amnesia Responds more to Instrumental than to Hedonic Motives</h4>
+          <p class="pub-authors">with F. Galeotti and M.C. Villeval</p>
+          <p class="pub-abstract">
+            Large-scale incentivized online experiment (n=1,322). Hedonic considerations alone do not motivate forgetting of past
+            unethical behavior, but when forgetting can justify a future action, motivated forgetting becomes more likely.
+          </p>
+          <div class="pub-links">
+            <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_b7e422311e8e4357a9dd1f113480d9ed.pdf" target="_blank" rel="noopener" class="pub-link">PDF</a>
+            <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_db0f9ff2a37d44db8ca478bd2e216806.pdf" target="_blank" rel="noopener" class="pub-link">Appendix</a>
+          </div>
+        </article>
+
+        <article class="pub-card fade-in" data-type="published">
+          <div class="pub-meta">
+            <span class="pub-journal">Games and Economic Behavior</span>
+            <span class="pub-year">2019</span>
+          </div>
+          <h4 class="pub-title">Motivated Memory in Dictator Games</h4>
+          <p class="pub-authors">with M.C. Villeval</p>
+          <p class="pub-abstract">
+            Experiment showing dictators remember their altruistic choices more than selfish ones. The recall asymmetry disappears
+            when options are selected randomly by computer, suggesting a self-serving memory bias.
+          </p>
+          <div class="pub-links">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0899825619300879" target="_blank" rel="noopener" class="pub-link">Journal</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- WORK IN PROGRESS -->
+      <div class="pub-group" id="in-progress">
+        <h3 class="pub-group-title fade-in">Work in Progress</h3>
+
+        <article class="pub-card fade-in" data-type="progress">
+          <h4 class="pub-title">Motivated interpretation of no news</h4>
+          <p class="pub-authors">with J. Hagenbach and C. Rimbaud</p>
+        </article>
+
+        <article class="pub-card fade-in" data-type="progress">
+          <h4 class="pub-title">Feeling Helpless: attitude toward information</h4>
+          <p class="pub-authors">with A. Solda</p>
+        </article>
+
+        <article class="pub-card fade-in" data-type="progress">
+          <h4 class="pub-title">Quantifying the role of motivational and cognitive factors in the formation of beliefs</h4>
+          <p class="pub-authors">with A. Prati</p>
+        </article>
+
+        <article class="pub-card fade-in" data-type="progress">
+          <h4 class="pub-title">Discounted Universalism</h4>
+          <p class="pub-authors">with J. Hagenbach — Data collected</p>
+        </article>
+
+        <article class="pub-card fade-in" data-type="progress">
+          <h4 class="pub-title">Are individuals aware of their motivated beliefs?</h4>
+          <p class="pub-authors">with A. Prati — Design stage</p>
+        </article>
+
+        <article class="pub-card fade-in" data-type="progress">
+          <h4 class="pub-title">In group vs. Out group communication</h4>
+          <p class="pub-authors">with J. Hagenbach and C. Tergiman</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching" class="section-alt">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Teaching</h2>
+
+      <div class="teaching-grid">
+        <div class="teaching-block fade-in">
+          <h3>Université Paris 1 Panthéon-Sorbonne <span class="tag tag-current">Current</span></h3>
+          <table class="teaching-table">
+            <thead><tr><th>Course</th><th>Level</th></tr></thead>
+            <tbody>
+              <tr><td>Principles of Economics</td><td>Master 1</td></tr>
+              <tr><td>Frontiers in Behavioral Economics <em>(T.A.)</em></td><td>Master 2</td></tr>
+              <tr><td>Microeconomics</td><td>L1 (Undergraduate)</td></tr>
+              <tr><td>Applied Microeconomics <em>(T.A.)</em></td><td>Master 1</td></tr>
+              <tr><td>PhD track</td><td>Master 2</td></tr>
+              <tr><td>Economics of Uncertainty and Information <em>(T.A.)</em></td><td>L3 (Undergraduate)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="teaching-block fade-in delay-1">
+          <h3>Toulouse School of Economics</h3>
+          <table class="teaching-table">
+            <thead><tr><th>Course</th><th>Level</th></tr></thead>
+            <tbody>
+              <tr><td>Microeconomics <em>(T.A.)</em></td><td>Undergraduate</td></tr>
+              <tr><td>Macroeconomics <em>(T.A.)</em></td><td>Undergraduate</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="teaching-block fade-in delay-2">
+          <h3>École Centrale de Lyon</h3>
+          <table class="teaching-table">
+            <thead><tr><th>Course</th><th>Level</th></tr></thead>
+            <tbody>
+              <tr><td>Macroeconomics <em>(T.A.)</em></td><td>Engineering students</td></tr>
+              <tr><td>Communication <em>(T.A.)</em></td><td>Engineering students</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="teaching-block fade-in delay-2">
+          <h3>Prépa — Lycée J. Récamier, Lyon</h3>
+          <table class="teaching-table">
+            <thead><tr><th>Course</th><th>Level</th></tr></thead>
+            <tbody>
+              <tr><td>Microeconomics — oral prep (ENS Paris-Saclay entrance)</td><td>1st &amp; 2nd year</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Curriculum Vitae</h2>
+      <div class="cv-actions fade-in delay-1">
+        <a href="assets/cv/cv.pdf" download class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download CV
+        </a>
+      </div>
+      <div class="cv-embed fade-in delay-2">
+        <iframe src="assets/cv/cv.pdf" title="Charlotte Saucet — CV" width="100%" height="900px"></iframe>
+        <p class="cv-fallback">
+          Can't see the PDF? <a href="assets/cv/cv.pdf" target="_blank">Open in a new tab</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-alt">
+    <div class="section-inner">
+      <h2 class="section-title fade-in">Contact</h2>
+      <div class="contact-grid fade-in delay-1">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <a href="mailto:charlotte.saucet@univ-paris1.fr">charlotte.saucet@univ-paris1.fr</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Address</p>
+            <p>Maison des Sciences Économiques<br />112 boulevard de l'hôpital<br />75647 Paris Cedex 13, France</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <div>
+            <p class="contact-label">Identifiers</p>
+            <a href="https://orcid.org/0000-0003-1337-2594" target="_blank" rel="noopener">ORCID 0000-0003-1337-2594</a><br />
+            <a href="https://cv.archives-ouvertes.fr/charlotte-saucet" target="_blank" rel="noopener">idHAL: charlotte-saucet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Charlotte Saucet &nbsp;·&nbsp; Université Paris 1 Panthéon-Sorbonne</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
