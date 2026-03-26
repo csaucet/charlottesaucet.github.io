@@ -6,7 +6,7 @@
   <title>Charlotte Saucet — Behavioral Economist</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
@@ -14,13 +14,13 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a class="nav-logo" href="#home">C. Saucet</a>
+      <a class="nav-logo" href="#home">Charlotte <span class="nav-logo-accent">Saucet</span></a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
-        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Research</a></li>
         <li><a href="#teaching">Teaching</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -29,70 +29,74 @@
   </nav>
 
   <!-- HOME -->
-  <section id="home">
+  <section id="home" class="section-alt">
     <div class="hero-content">
       <div class="hero-photo-wrap reveal">
         <img src="assets/img/photo.jpg" alt="Charlotte Saucet" class="hero-photo" />
         <div class="hero-photo-accent"></div>
       </div>
       <div class="hero-text reveal delay-1">
-        <div class="hero-greeting">Behavioral &amp; Experimental Economics</div>
-        <h1 class="hero-name">Charlotte <em>Saucet</em></h1>
-        <p class="hero-role">
-          Associate Professor (Maître de conférences) at the
-          <a href="https://centredeconomiesorbonne.cnrs.fr/" target="_blank" rel="noopener">Centre d'Économie de la Sorbonne</a>,
-          Université Paris&nbsp;1 Panthéon-Sorbonne.
+        <p class="hero-welcome">Welcome!</p>
+        <p class="hero-bio">
+          I am an associate professor (Maître de conférences) of Economics at the
+          <a href="https://centredeconomiesorbonne.cnrs.fr/" target="_blank" rel="noopener">Centre d'Économie de la Sorbonne (CES)</a>
+          at <a href="https://www.pantheonsorbonne.fr/" target="_blank" rel="noopener">Paris&nbsp;1 Panthéon-Sorbonne</a>. Before that, I was a Post Doc researcher at <a href="https://www.sciencespo.fr/fr/" target="_blank" rel="noopener">Sciences Po Paris</a> (2020–2021).
+          I hold a PhD in Economics from <a href="https://www.ens-lyon.fr/" target="_blank" rel="noopener">École Normale Supérieure de Lyon</a> (defense December 2019).
         </p>
         <p class="hero-bio">
-          I am an economist working at the intersection of behavioral and experimental economics.
           My research focuses on how individuals form and update beliefs — with a particular interest
-          in motivated reasoning, memory biases, and strategic communication.
+          in strategic communication, motivated reasoning, and memory biases.
         </p>
-        <div class="hero-tags">
-          <span class="tag">Beliefs Formation</span>
-          <span class="tag">Motivated Reasoning</span>
-          <span class="tag">Memory</span>
-          <span class="tag">Strategic Communication</span>
-          <span class="tag">Experimental Economics</span>
-        </div>
         <div class="hero-links">
-          <a href="mailto:charlotte.saucet@univ-paris1.fr" class="btn btn-primary">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-            Email
-          </a>
-          <a href="#research" class="btn btn-outline">Publications</a>
+          <a href="mailto:charlotte.saucet@univ-paris1.fr" class="btn btn-outline">Email</a>
           <a href="https://orcid.org/0000-0003-1337-2594" target="_blank" rel="noopener" class="btn btn-outline">ORCID</a>
           <a href="https://cv.hal.science/charlotte-saucet" target="_blank" rel="noopener" class="btn btn-outline">HAL</a>
+        </div>
+      </div>
+      <div class="hero-career reveal delay-2">
+        <div class="timeline">
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2025 — 2026</div>
+              <div class="timeline-role">CNRS Delegation</div>
+              <div class="timeline-place">12 months, part-time (50%)</div>
+            </div>
+          </div>
+          <div class="timeline-item current">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2022 — Present</div>
+              <div class="timeline-role">Associate Professor (MCF)</div>
+              <div class="timeline-place">Centre d'Économie de la Sorbonne<br><a href="https://www.pantheonsorbonne.fr/" target="_blank" rel="noopener">Paris 1 Panthéon-Sorbonne</a></div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2020 — 2021</div>
+              <div class="timeline-role">Post-Doctoral Researcher</div>
+              <div class="timeline-place"><a href="https://www.sciencespo.fr/fr/" target="_blank" rel="noopener">Sciences Po Paris</a></div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-period">2015 — 2019</div>
+              <div class="timeline-role">PhD in Economics</div>
+              <div class="timeline-place"><a href="https://www.ens-lyon.fr/" target="_blank" rel="noopener">École Normale Supérieure de Lyon</a><br>Defense December 2019</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RESEARCH -->
-  <section id="research">
-    <div class="section-inner">
-      <div class="section-label reveal">Research</div>
-      <h2 class="section-title reveal">Publications &amp; Working Papers</h2>
 
-      <!-- INTEREST CARDS -->
-      <div class="interests-grid reveal">
-        <div class="interest-card">
-          <div class="interest-name">Motivated Reasoning</div>
-          <div class="interest-desc">How do people distort their interpretation of evidence to protect cherished beliefs?</div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-name">Beliefs Formation</div>
-          <div class="interest-desc">Mechanisms of belief updating, overconfidence, and polarization in health and social settings.</div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-name">Memory &amp; Recall</div>
-          <div class="interest-desc">Strategic and motivated forgetting — when memory serves our self-image rather than accuracy.</div>
-        </div>
-        <div class="interest-card">
-          <div class="interest-name">Strategic Communication</div>
-          <div class="interest-desc">How skepticism and persuasion interact in disclosure games and real-world communication.</div>
-        </div>
-      </div>
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="section-inner">
+      <h3 class="pub-section-title reveal">Publications &amp; Working Papers</h3>
 
       <!-- FILTER -->
       <div class="pub-filters reveal">
@@ -103,111 +107,106 @@
 
       <!-- PUBLISHED PAPERS -->
       <div class="pub-group" id="group-published">
-        <h3 class="pub-group-title reveal">Published &amp; Forthcoming</h3>
+        <h3 class="pub-group-title reveal">Published</h3>
 
         <div class="pub-item reveal" data-type="published">
           <div class="pub-header" onclick="toggleAbstract(this)">
+            <button class="pub-toggle" aria-label="Show abstract">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
             <div class="pub-info">
               <div class="pub-title-text">Is motivated memory (just) a matter of mood?</div>
               <div class="pub-meta">with A. Prati · <span class="pub-journal">Experimental Economics</span> · 2025</div>
             </div>
-            <button class="pub-toggle" aria-label="Show abstract">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
           </div>
           <div class="pub-abstract-wrap">
             <p class="pub-abstract-text">
-              Tests whether overconfidence driven by biased memory is explained by self-enhancement or mood-congruency effects.
-              Results support the self-enhancement hypothesis: individuals better recall positive than negative feedback even when in a negative mood.
+              Why are people overconfident in spite of the negative feedback they receive? Psychology and economic studies have put forward the role of biased memory. Individuals tend to better recall positive feedback than negative feedback. The typical explanation for this asymmetry is the self-enhancement effect: people prioritize positive information to enhance their self-image. An alternative explanation is the mood-congruency effect: positive information is easier to recall for individuals in non-negative mood. In a laboratory experiment where we exogenously manipulate mood, we test the existence and the relative dominance of these two effects. Our results support the self-enhancement hypothesis: individuals better recall positive than negative feedback, even when they are in a negative mood. When they do not recall, they exhibit overly optimistic recall of past feedback, regardless of their mood. Conversely, we find no clear evidence of mood congruency. These results suggest that mood does not impact recall accuracy of self-relevant information, and overconfident behaviors can be alleviated by intervening on individuals' beliefs.
             </p>
             <div class="pub-abstract-links">
-              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_d989c843c52c4334b403e257ac09d482.pdf" target="_blank" rel="noopener" class="pub-link">PDF →</a>
+              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_d989c843c52c4334b403e257ac09d482.pdf" target="_blank" rel="noopener" class="pub-link">Pre-print →</a>
             </div>
           </div>
         </div>
 
         <div class="pub-item reveal" data-type="published">
           <div class="pub-header" onclick="toggleAbstract(this)">
+            <button class="pub-toggle" aria-label="Show abstract">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
             <div class="pub-info">
               <div class="pub-title-text">Motivated Skepticism</div>
               <div class="pub-meta">with J. Hagenbach · <span class="pub-journal">Review of Economic Studies</span> · 2025</div>
             </div>
-            <button class="pub-toggle" aria-label="Show abstract">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
           </div>
           <div class="pub-abstract-wrap">
             <p class="pub-abstract-text">
-              Experimental study of how individuals read strategically-transmitted information when they have preferences over what they will learn.
-              Finds that skepticism is lower when it is self-threatening — a new channel for belief protection in communication.
+              We experimentally study how individuals read strategically-transmitted information when they have preferences over what they will learn. Subjects play disclosure games in which Receivers should interpret messages skeptically. We vary whether the state that Senders communicate about is ego-relevant or neutral for Receivers, and whether skeptical beliefs are aligned or not with what Receivers prefer believing. Compared to neutral settings, skepticism is significantly lower when it is self-threatening, and not enhanced when it is self-serving. These results shed light on a new channel that individuals can use to protect their beliefs in communication situations: they exercise skepticism in a motivated way, that is, in a way that depends on the desirability of the conclusions that skeptical inferences lead to. We propose two behavioral models that can generate motivated skepticism. In one model, the Receiver freely manipulates his beliefs after having made skeptical inferences. In the other, the Receiver reasons about evidence in steps and the depth of his reasoning is motivated.
             </p>
             <div class="pub-abstract-links">
-              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_27e20c0b3cb44bd39cae15a809466791.pdf" target="_blank" rel="noopener" class="pub-link">PDF →</a>
-              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_7fda74bc8cfb42e9be249fb11c509f01.pdf" target="_blank" rel="noopener" class="pub-link">Appendix →</a>
+              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_27e20c0b3cb44bd39cae15a809466791.pdf" target="_blank" rel="noopener" class="pub-link">Paper →</a>
+              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_7fda74bc8cfb42e9be249fb11c509f01.pdf" target="_blank" rel="noopener" class="pub-link">Online appendix →</a>
             </div>
           </div>
         </div>
 
         <div class="pub-item reveal" data-type="published">
           <div class="pub-header" onclick="toggleAbstract(this)">
+            <button class="pub-toggle" aria-label="Show abstract">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
             <div class="pub-info">
               <div class="pub-title-text">The causal effect of a health treatment on beliefs, stated preferences and memories</div>
               <div class="pub-meta">with A. Prati · <span class="pub-journal">Journal of Health Economics</span> · 2024</div>
             </div>
-            <button class="pub-toggle" aria-label="Show abstract">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
           </div>
           <div class="pub-abstract-wrap">
             <p class="pub-abstract-text">
-              Exploits a natural experiment from the UK COVID-19 vaccination campaign. After vaccination, individuals update beliefs
-              overly optimistically about their vaccine's safety and effectiveness, and show distorted memories of prior beliefs.
+              The paper estimates the causal effect of a health treatment on patients' beliefs, preferences and memories about the treatment. It exploits a natural experiment which occurred in the United Kingdom during the COVID-19 vaccination campaign. UK residents could choose to opt into the vaccination program, but not which vaccine they received. The assignment to a vaccine offered little objective information for learning about its qualities, but triggered strong psychological demand for reassuring beliefs. We surveyed a sample of UK residents about their beliefs on the different COVID-19 vaccines before and after receiving their jab. Before vaccination, individuals exhibit similar prior beliefs and stated preferences about the different vaccines. After vaccination, however, they update their beliefs overly optimistically about the safety and effectiveness of the vaccine they received, state that they would have chosen it if they could and have distorted memories about their past beliefs. These results cannot be explained by conventional experience effects. At the aggregated level, they show that random assignment to a health treatment predicts a polarization of opinions about its quality. At the individual level, these findings provide a novel test of the predictions of motivated beliefs in a real-world health setting.
             </p>
             <div class="pub-abstract-links">
-              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_9bc6bfad4cc84d8683962a46876354f6.pdf" target="_blank" rel="noopener" class="pub-link">Appendix →</a>
+              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_9bc6bfad4cc84d8683962a46876354f6.pdf" target="_blank" rel="noopener" class="pub-link">Online appendix →</a>
             </div>
           </div>
         </div>
 
         <div class="pub-item reveal" data-type="published">
           <div class="pub-header" onclick="toggleAbstract(this)">
+            <button class="pub-toggle" aria-label="Show abstract">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
             <div class="pub-info">
               <div class="pub-title-text">Unethical Amnesia Responds more to Instrumental than to Hedonic Motives</div>
               <div class="pub-meta">with F. Galeotti and M.C. Villeval · <span class="pub-journal">PNAS</span> · 2020</div>
             </div>
-            <button class="pub-toggle" aria-label="Show abstract">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
           </div>
           <div class="pub-abstract-wrap">
             <p class="pub-abstract-text">
-              Large-scale incentivized online experiment (n=1,322). Hedonic considerations alone do not motivate forgetting of past
-              unethical behavior, but when forgetting can justify a future action, motivated forgetting becomes more likely.
+              Humans care about morality. Yet, they often engage in actions that contradict their moral self. Unethical amnesia is observed when people do not remember or remember less vividly these actions. This paper explores two reasons why individuals may experience unethical amnesia. Forgetting past unethical behavior may be motivated by purely hedonic or affective reasons, such as the willingness to maintain one's moral self-image, but also by instrumental or strategic motives, in anticipation of future misbehavior. In a large-scale incentivized online experiment (n = 1,322) using a variant of a mind game, we find that hedonic considerations are not sufficient to motivate the forgetting of past cheating behavior. This is confirmed in a follow-up experiment (n = 1,005) in which recalls are elicited the same day instead of 3 week apart. However, when unethical amnesia can serve as a justification for a future action, such as deciding on whether to keep undeserved money, motivated forgetting is more likely. Thereby, we show that motivated forgetting occurs as a self-excuse to justify future immoral decisions.
             </p>
             <div class="pub-abstract-links">
-              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_b7e422311e8e4357a9dd1f113480d9ed.pdf" target="_blank" rel="noopener" class="pub-link">PDF →</a>
-              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_db0f9ff2a37d44db8ca478bd2e216806.pdf" target="_blank" rel="noopener" class="pub-link">Appendix →</a>
+              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_b7e422311e8e4357a9dd1f113480d9ed.pdf" target="_blank" rel="noopener" class="pub-link">Paper →</a>
+              <a href="https://0e2e8e3b-7102-4a43-857f-da174f2a3ca8.filesusr.com/ugd/b12899_db0f9ff2a37d44db8ca478bd2e216806.pdf" target="_blank" rel="noopener" class="pub-link">Online appendix →</a>
             </div>
           </div>
         </div>
 
         <div class="pub-item reveal" data-type="published">
           <div class="pub-header" onclick="toggleAbstract(this)">
+            <button class="pub-toggle" aria-label="Show abstract">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
             <div class="pub-info">
               <div class="pub-title-text">Motivated Memory in Dictator Games</div>
               <div class="pub-meta">with M.C. Villeval · <span class="pub-journal">Games and Economic Behavior</span> · 2019</div>
             </div>
-            <button class="pub-toggle" aria-label="Show abstract">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
           </div>
           <div class="pub-abstract-wrap">
             <p class="pub-abstract-text">
-              Experiment showing dictators remember their altruistic choices more than selfish ones. The recall asymmetry disappears
-              when options are selected randomly by computer, suggesting a self-serving memory bias.
+              The memory people have of their past behavior is one of the main sources of information about themselves. To study whether people retrieve their memory self-servingly in social encounters, we designed an experiment in which participants play binary dictator games and then have to recall the amounts allocated to the receivers. We find evidence of motivated memory through selective recalls: dictators remember more their altruistic than their selfish choices. A causal effect of the responsibility of decisions is identified, as the recall asymmetry disappears when options are selected randomly by the computer program. Incentivizing memory accuracy increases the percentage of dictators' correct recalls only when they behaved altruistically. In contrast, there is no clear evidence of motivated memory through biased memory errors, i.e., overly optimistic recalls: dictators recall selectively but they do not bias the direction and magnitude of these recalls in a self-serving way.
             </p>
             <div class="pub-abstract-links">
-              <a href="https://www.sciencedirect.com/science/article/pii/S0899825619300879" target="_blank" rel="noopener" class="pub-link">Journal →</a>
+              <a href="https://www.sciencedirect.com/science/article/pii/S0899825619300879" target="_blank" rel="noopener" class="pub-link">Paper →</a>
             </div>
           </div>
         </div>
@@ -220,35 +219,17 @@
         <div class="pub-item reveal" data-type="wip">
           <div class="pub-header">
             <div class="pub-info">
-              <div class="pub-title-text">Motivated interpretation of no news</div>
-              <div class="pub-meta">with J. Hagenbach and C. Rimbaud</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pub-item reveal" data-type="wip">
-          <div class="pub-header">
-            <div class="pub-info">
-              <div class="pub-title-text">Feeling Helpless: attitude toward information</div>
-              <div class="pub-meta">with A. Solda</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pub-item reveal" data-type="wip">
-          <div class="pub-header">
-            <div class="pub-info">
-              <div class="pub-title-text">Quantifying the role of motivational and cognitive factors in the formation of beliefs</div>
-              <div class="pub-meta">with A. Prati</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pub-item reveal" data-type="wip">
-          <div class="pub-header">
-            <div class="pub-info">
-              <div class="pub-title-text">Discounted Universalism</div>
+              <div class="pub-title-text">Intertemporal Universalism</div>
               <div class="pub-meta">with J. Hagenbach · <span class="pub-status">Data collected</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item reveal" data-type="wip">
+          <div class="pub-header">
+            <div class="pub-info">
+              <div class="pub-title-text">In group vs. Out group communication</div>
+              <div class="pub-meta">with J. Hagenbach and C. Tergiman</div>
             </div>
           </div>
         </div>
@@ -265,11 +246,12 @@
         <div class="pub-item reveal" data-type="wip">
           <div class="pub-header">
             <div class="pub-info">
-              <div class="pub-title-text">In group vs. Out group communication</div>
-              <div class="pub-meta">with J. Hagenbach and C. Tergiman</div>
+              <div class="pub-title-text">Motivated interpretation of no news</div>
+              <div class="pub-meta">with J. Hagenbach and C. Rimbaud</div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -277,17 +259,16 @@
   <!-- TEACHING -->
   <section id="teaching" class="section-alt">
     <div class="section-inner">
-      <div class="section-label reveal">Academic</div>
-      <h2 class="section-title reveal">Teaching</h2>
+      <div class="section-label reveal">Teaching</div>
 
       <div class="teaching-grid">
         <div class="teaching-block reveal">
-          <h3>Université Paris 1 Panthéon-Sorbonne <span class="tag tag-current">Current</span></h3>
+          <h3><span class="teaching-uni">Université Paris 1 Panthéon-Sorbonne</span></h3>
           <table class="teaching-table">
             <thead><tr><th>Course</th><th>Level</th></tr></thead>
             <tbody>
-              <tr><td>Principles of Economics</td><td>Master 1</td></tr>
-              <tr><td>Frontiers in Behavioral Economics <em>(T.A.)</em></td><td>Master 2</td></tr>
+              <tr><td>Principles of Economics <span class="tag tag-current">Current</span></td><td>Master 1</td></tr>
+              <tr><td>Frontiers in Behavioral Economics <em>(T.A.)</em> <span class="tag tag-current">Current</span></td><td>Master 2</td></tr>
               <tr><td>Microeconomics</td><td>L1 (Undergraduate)</td></tr>
               <tr><td>Applied Microeconomics <em>(T.A.)</em></td><td>Master 1</td></tr>
               <tr><td>PhD track</td><td>Master 2</td></tr>
@@ -297,7 +278,7 @@
         </div>
 
         <div class="teaching-block reveal delay-1">
-          <h3>Toulouse School of Economics</h3>
+          <h3><span class="teaching-uni">Toulouse School of Economics</span></h3>
           <table class="teaching-table">
             <thead><tr><th>Course</th><th>Level</th></tr></thead>
             <tbody>
@@ -308,7 +289,7 @@
         </div>
 
         <div class="teaching-block reveal delay-2">
-          <h3>École Centrale de Lyon</h3>
+          <h3><span class="teaching-uni">École Centrale de Lyon</span></h3>
           <table class="teaching-table">
             <thead><tr><th>Course</th><th>Level</th></tr></thead>
             <tbody>
@@ -319,7 +300,7 @@
         </div>
 
         <div class="teaching-block reveal delay-2">
-          <h3>Prépa — Lycée J. Récamier, Lyon</h3>
+          <h3><span class="teaching-uni">Prépa — Lycée J. Récamier, Lyon</span></h3>
           <table class="teaching-table">
             <thead><tr><th>Course</th><th>Level</th></tr></thead>
             <tbody>
@@ -334,15 +315,8 @@
   <!-- CV -->
   <section id="cv">
     <div class="section-inner">
-      <div class="section-label reveal">Career</div>
-      <h2 class="section-title reveal">Curriculum Vitae</h2>
-      <div class="cv-actions reveal delay-1">
-        <a href="assets/cv/main.pdf" download class="btn btn-primary">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
-        </a>
-      </div>
-      <div class="cv-embed reveal delay-2">
+      <div class="section-label reveal" style="margin-bottom: 1.5rem;">Curriculum Vitae</div>
+      <div class="cv-embed reveal delay-1">
         <iframe src="assets/cv/main.pdf" title="Charlotte Saucet — CV" width="100%" height="900px"></iframe>
         <p class="cv-fallback">
           Can't see the PDF? <a href="assets/cv/main.pdf" target="_blank">Open in a new tab</a>.
@@ -354,11 +328,10 @@
   <!-- CONTACT -->
   <section id="contact" class="section-alt">
     <div class="section-inner">
-      <div class="section-label reveal">Get in touch</div>
-      <h2 class="section-title reveal">Contact</h2>
+      <div class="section-label reveal">Contact</div>
       <div class="contact-info reveal delay-1">
-        <div class="contact-info-item">
-          <div class="contact-info-label">Affiliation</div>
+        <div class="contact-info-item contact-info-wide">
+          <div class="contact-info-label">Address</div>
           <div class="contact-info-value">
             Centre d'Économie de la Sorbonne (UMR 8174)<br />
             Université Paris 1 Panthéon-Sorbonne<br />
@@ -378,6 +351,31 @@
             <a href="https://orcid.org/0000-0003-1337-2594" target="_blank" rel="noopener">ORCID: 0000-0003-1337-2594</a><br />
             <a href="https://cv.hal.science/charlotte-saucet" target="_blank" rel="noopener">idHAL: charlotte-saucet</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERESTS -->
+  <section id="research">
+    <div class="section-inner">
+      <div class="section-label reveal">Interests</div>
+      <div class="interests-grid reveal">
+        <div class="interest-card">
+          <div class="interest-name">Beliefs Formation</div>
+          <div class="interest-desc">How do individuals form and update their beliefs?</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-name">Motivated Reasoning</div>
+          <div class="interest-desc">How do people distort their interpretation of evidence to protect cherished beliefs?</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-name">Strategic Communication</div>
+          <div class="interest-desc">How individuals interpret strategically-transmitted information?</div>
+        </div>
+        <div class="interest-card">
+          <div class="interest-name">Memory &amp; Recall</div>
+          <div class="interest-desc">Why do people sometimes selectively remember their past choices?</div>
         </div>
       </div>
     </div>
